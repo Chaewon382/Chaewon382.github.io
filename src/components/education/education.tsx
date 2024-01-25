@@ -50,8 +50,9 @@ function EducationComponent(props: EducationComponentProps) {
                 </Typography>
                 <Typography>@ {ed.university}</Typography>
                 <Typography variant='caption'>{ed.date}</Typography>
-                <Typography variant='body2' sx={{mt: '10px'}}>Specialization: {ed.specialization}</Typography>
+                <Typography variant='body2' sx={{m: '10px 0px 5px 0px'}}>Specialization: {ed.specialization}</Typography>
                 <Typography variant='body2'>Overall GPA: {ed.gpa}/4.0</Typography>
+                {ed.majorGpa ? <Typography variant='body2'>Major GPA: {ed.majorGpa}/4.0</Typography> : <></>}
             </TimelineContent>
             </TimelineItem>
         ))}

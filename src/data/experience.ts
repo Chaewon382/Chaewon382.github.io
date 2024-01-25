@@ -13,7 +13,7 @@ export const EXPERIENCES: Experience[] = [
             'Collaborated across teams, ensuring design alignment with accessibility standards and successful API integration for new widgets',
             'Assured code quality by achieving 97% unit test coverage across both front-end and back-end services'
         ],
-        techstack: 'JavaScript, TypeScript, ReactJS, MaterialUI, Node.js, Jest, GCP, ArgoCD, Git, RESTful API'
+        techstack: 'JavaScript, TypeScript, ReactJS, MaterialUI, Node.js, Jest, GCP, ArgoCD, Git, RESTful API, Figma'
         // [ 'JavaScript', 'TypeScript', 'ReactJS', 'Node.js', 'Jest', 'GCP', 'ArgoCD', 'Git', 'RESTful API']
     }, {
         position: 'Software Development Intern',

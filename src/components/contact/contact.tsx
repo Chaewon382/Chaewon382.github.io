@@ -35,6 +35,7 @@ function Contact() {
                     icon={<EmailIcon />}
                     text='Email'
                     value='chaewon.park382@gmail.com'
+                    link='mailto: chaewon.park382@gmail.com'
                 />
                 <ContactInfo
                     icon={<HomeIcon />}
@@ -45,6 +46,7 @@ function Contact() {
                     icon={<LinkedInIcon />}
                     text='LinkedIn'
                     value='https://www.linkedin.com/in/chaewon-park-432282195/'
+                    link='https://www.linkedin.com/in/chaewon-park-432282195/'
                 />
             </Box>
         </Box>

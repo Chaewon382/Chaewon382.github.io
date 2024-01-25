@@ -1,13 +1,22 @@
 import { Project } from "../types";
 
-export const PROJECTS: Project[] = [
+export const PROJECTS: Project[] = [{
+        title: 'Portfolio Webpage (this!)',
+        duration: 'Jan 2024',
+        explanation: [
+            'Created a portfolio web page including detailed explanation on my past works as well as links to relevant documents and external websites'
+        ],
+        techstack: 'Typescript, ReactJS, MaterialUI, CSS, HTML',
+        linkText: 'View Source Code',
+        link: 'https://github.com/Chaewon382/Chaewon382.github.io/tree/main',
+    },
     {
         title: 'Unveiling Typicality Effects in Vision Models',
         duration: 'Sep 2023 - Dec 2023',
         explanation: [
             'Exaluated whether Torch vision models exhibit human-like behaviors while classifying images. In particular, typicality effect was closely examined which refers to a phenomenon where people often use typical objects of a category to classify other instances'
         ],
-        techstack: [ 'Python', 'PyTorch', 'Pandas' ],
+        techstack: 'Python, PyTorch, Pandas',
         linkText: 'View Report',
         link: '../../documents/TypEffectReport.pdf'
     }, {
@@ -34,7 +43,7 @@ export const PROJECTS: Project[] = [
             'Deployed an open source software Mojaloop on Kubernetes and connected with Java Spring servers',
             'Worked as a back-end developer implementing user services for digital payment between individuals using Java'
         ],
-        techstack: ['Java', 'Android Studio', 'Kubernetes', 'Java Springboot', 'RESTful API']
+        techstack: 'Java, Android Studio, Kubernetes, Java Springboot, RESTful API',
     }, {
         title: 'Tower Defense Game',
         duration: 'August 2021 – November 2021',
@@ -45,7 +54,7 @@ export const PROJECTS: Project[] = [
             'The game followed basic rules of tower defense games: (1) Users can put their usernames and select difficulty at the beginning. (2) Users place towers along the path to attack enemies and protect the monument. (3) Enemies move toward the monument and break it down. (4) Display win/lose screen based on kill counts, remaining health of the monument.',
             'Worked as a full-stack developer in charge of main implementation and UI design'
         ],
-        techstack: [ 'JavaFX', 'TestFX', 'Agile' ]
+        techstack: 'JavaFX, TestFX, Agile' 
     }, {
         title: 'Sports Forecasting Tool',
         duration: 'Feburary 2022 - May 2022',
@@ -54,7 +63,7 @@ export const PROJECTS: Project[] = [
             'Preprocessed data with Principal Component Analysis (PCA)',
             'Implemented a logistic regression, SVM and Neural Network from Python scikit-learn and achieved the highest accuracy of 88%'
         ],
-        techstack: [ 'Scikit-learn', 'ML techniques' ]
+        techstack: 'Scikit-learn, ML techniques' 
     }, {
         title: 'Museum Guide Robot Path Planning',
         duration: 'March 2022 - April 2022',

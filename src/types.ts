@@ -4,6 +4,7 @@ export type Education = {
     date: string;
     specialization?: string;
     gpa: number;
+    majorGpa?:number;
     coursework?: string[]
 }
 
@@ -22,7 +23,7 @@ export type Project = {
     title: string;
     duration: string;
     explanation: string[];
-    techstack?: string[];
+    techstack?: string;
     link?: string;
     linkText?: string;    
 }

@@ -2,15 +2,16 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 import { Box, Typography } from '@mui/material';
-import { Header, ExperienceComponent, ProjectComponent, SectionHeader, EducationComponent, About, Contact, ScrollButton } from './components';
+import { Header, Note, ExperienceComponent, ProjectComponent, SectionHeader, EducationComponent, About, Contact, ScrollButton, Greeting } from './components';
 import { EXPERIENCES } from './data/experience';
 import { PROJECTS } from './data/projects';
 import { EDUCATIONS } from './data/education';
 
 function App() {
   return (
-    <Box sx={{mb: '200px'}}>
+    <Box sx={{mb: '200px'}} >
       <Header />
+      <Greeting />
 
       <SectionHeader id='about' title='ABOUT ME'>
         <About />
@@ -36,6 +37,7 @@ function App() {
         <Contact />
       </SectionHeader>
 
+      {/* <Typography variant='caption'> copyright @ chaewon 2024</Typography> */}
       <ScrollButton />
     </Box>
   );

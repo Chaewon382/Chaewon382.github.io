@@ -10,14 +10,16 @@ interface ProjectComponentProps {
 function ProjectComponent(props: ProjectComponentProps) {
     const proj: Project = props.proj
 
-    // const handleClick = async () => {
-    //     try {
-    //         const module = await import(`${proj.link}`);
-    //         window.open(require(module.default), '_blank');
-    //     } catch (error) {
-    //         console.error('Error loading module:', error);
-    //     }
-    // };
+    const handleClick = () => {
+        // TODO: Fix hardcoded value
+        if (proj.title == 'Portfolio Webpage (this!)') {
+            window.open('https://github.com/Chaewon382/Chaewon382.github.io/tree/main', '_blank');
+        } else if (proj.title == 'Unveiling Typicality Effects in Vision Models') {
+            window.open(require('../../documents/TypEffectReport.pdf'), '_blank');
+        } else if (proj.title == 'Neural Network Complexity and Generalizability') {
+            window.open(require('../../documents/MLTheoryReport.pdf'), '_blank');
+        }
+    }
 
     return (
         <Card 
@@ -48,6 +50,8 @@ function ProjectComponent(props: ProjectComponentProps) {
                     {detail}
                 </ListItem>
                 ))}
+                {proj.techstack ? 
+                <ListItem sx={{ display: 'list-item' }}> Relevant Skills: {proj.techstack} </ListItem> : <></>}
             </List>
             {
                 proj.linkText ? 
@@ -57,7 +61,7 @@ function ProjectComponent(props: ProjectComponentProps) {
                     startIcon={<DescriptionIcon />}
                     sx={{ mt: '20px' }}
                     color='secondary'
-                    onClick={() => window.open(`/static/documents/${proj.link}`, '_blank')}
+                    onClick={handleClick}
                 >
                     {proj.linkText}
                 </Button> : <></>

@@ -7,7 +7,11 @@ function Header() {
         display: 'flex', 
         flexDirection: 'row',
         justifyContent: 'space-around',
-        mt: '20px'
+        padding: '10px',
+        backgroundColor: 'white',
+        position: 'fixed',
+        width:'100%',
+        zIndex:'1'
     }}>
         <Typography variant='h4' color='primary'> Chaewon's Portfolio. </Typography>
         <Box sx={{ display: 'flex', flexDirection: 'row' }}> 

@@ -4,7 +4,8 @@ import { Box, Typography, Avatar } from '@mui/material';
 interface ContactInfoProps {
     icon: React.ReactNode,
     text: string,
-    value: string
+    value: string,
+    link?: string
 }
 
 function ContactInfo(props: ContactInfoProps) {
@@ -18,13 +19,16 @@ function ContactInfo(props: ContactInfoProps) {
             width: '20%',
             margin: '20px'
         }}>
+            <a href={props.link}>
             <Avatar 
                 color='primary' 
                 sx={{width: '5rem', height: '5rem', m:'20px'}}>
                 {props.icon}
             </Avatar>
+            </a>
             <Typography color='primary' fontWeight='bold' sx={{m:'15px'}} >{props.text}</Typography>
-            <Typography color='primary'>{props.value}</Typography>
+            <Typography color='primary' sx={{m:'15px'}}>{props.value}</Typography>
+            
         </Box>
     )
 }

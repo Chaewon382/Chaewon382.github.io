@@ -7,6 +7,7 @@ export const EDUCATIONS: Education[] = [
         date: 'January 2023 - December 2023',
         specialization: 'Machine Learning',
         gpa: 3.83,
+        majorGpa: 4.0,
         coursework: [
             'Mathematical Foundations of Machine Learning',
             'Deep Learning',
@@ -21,6 +22,7 @@ export const EDUCATIONS: Education[] = [
         date: 'January 2021 - May 2023',
         specialization: 'Intelligence & Information/Internetworks',
         gpa: 3.96,
+        majorGpa: 4.0,
         coursework: [
             'Data Structures and Algorithm',
             'Design and Analysis of Algorithms',

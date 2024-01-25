@@ -11,6 +11,13 @@ interface ExperienceComponentProps {
 
 function ExperienceComponent(props: ExperienceComponentProps) {
     const exp: Experience = props.exp
+    const handleClick = () => {
+        // TODO: Fix hardcoded value
+        if (exp.company = 'Samsung Electronics') {
+            window.open(require('../../documents/samsung-certificate.pdf'));
+        }
+    }
+
     return (
         <Card 
             sx={{
@@ -54,7 +61,7 @@ function ExperienceComponent(props: ExperienceComponentProps) {
                     startIcon={<DescriptionIcon />}
                     sx={{ mt: '20px' }}
                     color='secondary'
-                    onClick={() => window.open(exp.link ? require(exp.link) : "", '_blank')}
+                    onClick={handleClick}
                 >
                     {exp.linkText }
                 </Button> : <></>
