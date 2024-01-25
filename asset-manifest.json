@@ -1,17 +1,20 @@
 {
   "files": {
     "main.css": "/static/css/main.f855e6bc.css",
-    "main.js": "/static/js/main.3f566f1b.js",
+    "main.js": "/static/js/main.27309054.js",
     "static/js/787.cf482a7c.chunk.js": "/static/js/787.cf482a7c.chunk.js",
     "static/media/profile-pic.PNG": "/static/media/profile-pic.c1b3f820bca1e0376a1a.PNG",
+    "static/media/TypEffectReport.pdf": "/static/media/TypEffectReport.c691b47541cc23033b37.pdf",
+    "static/media/samsung-certificate.pdf": "/static/media/samsung-certificate.0719ac7ec8dea8b7ab06.pdf",
+    "static/media/MLTheoryReport.pdf": "/static/media/MLTheoryReport.05b867147f6e23f329bf.pdf",
     "static/media/Resume_Jan24.pdf": "/static/media/Resume_Jan24.7ce51469f212ca153829.pdf",
     "index.html": "/index.html",
     "main.f855e6bc.css.map": "/static/css/main.f855e6bc.css.map",
-    "main.3f566f1b.js.map": "/static/js/main.3f566f1b.js.map",
+    "main.27309054.js.map": "/static/js/main.27309054.js.map",
     "787.cf482a7c.chunk.js.map": "/static/js/787.cf482a7c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f855e6bc.css",
-    "static/js/main.3f566f1b.js"
+    "static/js/main.27309054.js"
   ]
 }
