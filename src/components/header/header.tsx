@@ -24,6 +24,7 @@ function Header() {
             '@media (max-width: 600px)': {
                 flexWrap: 'wrap',
                 justifyContent: 'center',
+                m: '0px 60px 0px 50px'
             },
         }}> 
             <Button href='#about'>About</Button>

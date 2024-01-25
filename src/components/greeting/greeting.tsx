@@ -12,13 +12,13 @@ function Greeting() {
             flexDirection: 'column', 
             alignItems:'center', 
             p: '50px',
-            '@media (max-width: 600px)': {p: '100px 100px 150px 100px'}
+            '@media (max-width: 600px)': {p: '150px 70px 150px 70px'}
         }}>
             <Typography variant='h5' color='secondary' sx={{pt: '100px'}}>Hello! </Typography>
             <Typography 
                 variant='h5' 
                 color='secondary' 
-                sx={{'@media (max-width: 600px)': {textAlign: 'center'}}}
+                sx={{'@media (max-width: 600px)': {textAlign: 'center', width: '100%'}}}
             > My name is Chaewon, and I am a</Typography>
             <TypeWriter textList={introList} delay={100}/>
         </Box>
