@@ -11,10 +11,21 @@ function Header() {
         backgroundColor: 'white',
         position: 'fixed',
         width:'100%',
-        zIndex:'1'
+        zIndex:'1',
+        '@media (max-width: 600px)': {
+            flexDirection: 'column',
+            alignItems: 'center',
+        },
     }}>
         <Typography variant='h4' color='primary'> Chaewon's Portfolio. </Typography>
-        <Box sx={{ display: 'flex', flexDirection: 'row' }}> 
+        <Box sx={{ 
+            display: 'flex', 
+            flexDirection: 'row',
+            '@media (max-width: 600px)': {
+                flexWrap: 'wrap',
+                justifyContent: 'center',
+            },
+        }}> 
             <Button href='#about'>About</Button>
             <Button href='#ed'>Education</Button>
             <Button href='#exp'>Experience</Button>

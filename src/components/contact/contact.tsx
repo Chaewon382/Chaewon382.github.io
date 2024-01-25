@@ -24,7 +24,11 @@ function Contact() {
                 flexDirection:'row',
                 justifyContent: 'space-evenly',
                 alignItems: 'baseline',
-                flexWrap: 'wrap'
+                flexWrap: 'wrap',
+                '@media (max-width: 600px)': {
+                    flexDirection: 'column',
+                    alignItems: 'center',
+                },
             }}>
                 <ContactInfo
                     icon={<PhoneIcon />}

@@ -17,7 +17,8 @@ function ContactInfo(props: ContactInfoProps) {
             alignItems: 'center',
             textAlign: 'center', // Center the text horizontally
             width: '20%',
-            margin: '20px'
+            margin: '20px', 
+            '@media (max-width: 600px)': {width: '80%'}
         }}>
             <a href={props.link}>
             <Avatar 

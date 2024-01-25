@@ -17,7 +17,7 @@ function About() {
                 src={require('../../documents/profile-pic.PNG')} 
             />
             <Box
-                sx={{width: '500px', pl:'40px'}}
+                sx={{width: '500px', pl:'40px', '@media (max-width: 600px)': {width: '100%', p:'0px'}}}
             >
                 <Typography sx={{pb:'10px'}}>
                     My name is Chaewon Park. 

@@ -24,7 +24,8 @@ function ExperienceComponent(props: ExperienceComponentProps) {
                 p: '25px', 
                 m:'15px 30px 0px 30px', 
                 backgroundColor: '#D3D3D3',
-                maxWidth: '800px'
+                maxWidth: '800px',
+                '@media (max-width: 600px)': {m: '10px', p:'15px'}
             }}> 
             <Box sx={{ 
                 display: 'flex', 
@@ -37,12 +38,13 @@ function ExperienceComponent(props: ExperienceComponentProps) {
             >
                     {exp.position}
                 </Typography>
-                <Typography variant='caption'>
-                    {exp.duration}
-                </Typography>
+                
             </Box>
-            <Typography variant='subtitle2' sx={{ fontWeight: 'bold' }}>
+            <Typography variant='subtitle2' sx={{ fontWeight: 'bold', pb:'5px' }}>
                 { exp.team ? ` @ ${exp.company}, ${exp.team}` : ` @${exp.company}` }
+            </Typography>
+            <Typography variant='caption' sx={{pb:'5px'}}>
+                    {exp.duration}
             </Typography>
             <List sx={{listStyleType: 'disc', pl: 4}}>
                 {exp.explanation.map((detail, index) => (

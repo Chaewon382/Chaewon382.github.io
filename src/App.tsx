@@ -9,7 +9,7 @@ import { EDUCATIONS } from './data/education';
 
 function App() {
   return (
-    <Box sx={{mb: '200px'}} >
+    <Box sx={{mb: '200px', overflowX: 'hidden'}} >
       <Header />
       <Greeting />
 

@@ -27,7 +27,8 @@ function ProjectComponent(props: ProjectComponentProps) {
                 p: '25px', 
                 m:'15px 30px 0px 30px', 
                 backgroundColor: '#D3D3D3',
-                maxWidth: '800px'
+                maxWidth: '800px',
+                '@media (max-width: 600px)': {m: '10px', p:'15px'}
             }}> 
             <Box sx={{ 
                 display: 'flex', 

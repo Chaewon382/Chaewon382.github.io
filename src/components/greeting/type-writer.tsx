@@ -38,7 +38,7 @@ function TypeWriter(props: TypeWriterProps) {
             <Typography 
                 variant='h2' 
                 color='primary'
-                sx={{p: '20px', fontWeight: 'bold'}}
+                sx={{p: '20px', fontWeight: 'bold', '@media (max-width: 600px)': {textAlign: 'center', pb: '500px'}}}
             > {currentText} 
             </Typography>
         </Box>
